@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const icons: Record<string, string> = {
+  'ferry-tarifa-tangier': '🚢',
+  'things-to-do-in-tangier': '📍',
+  'is-tangier-safe': '🛡️',
+  'darija-for-travelers': '🗣️',
+};
+const guides = (await getCollection('guides', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+---
+<Base
+  title="Tangier Insider: honest Tangier travel guide by a local"
+  description="Practical Tangier travel advice from someone who lives here: the Tarifa ferry, what to see, safety, prices and the Darija words you actually need."
+>
+  <h1>Tangier, explained by someone who lives here</h1>
+  <p class="lead">
+    Practical, honest advice for visiting Tangier: how to cross from Spain, what is worth your time,
+    how to avoid the classic tourist traps, and a few words of Darija to make locals smile.
+  </p>
+
+  {guides.length > 0 ? (
+    <div class="cards">
+      {guides.map((g) => (
+        <a class="card" href={`/${g.id}/`}>
+          <strong>{icons[g.id] ?? '📖'} {g.data.title}</strong>
+          <p>{g.data.description}</p>
+        </a>
+      ))}
+    </div>
+  ) : (
+    <p class="note">The first guides are being checked on the ground and will be published very soon.</p>
+  )}
+
+  <h2>Why trust this guide?</h2>
+  <p>
+    Tangier Insider is written by a Tangier local, not by a travel agency or a ferry company. Prices and
+    schedules change often, so every page shows the date it was last checked and links to the official source.
+  </p>
+</Base>

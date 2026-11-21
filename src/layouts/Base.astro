@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  title: string;
+  description: string;
+  updated?: Date;
+}
+
+const { title, description, updated } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const fullTitle = Astro.url.pathname === '/' ? title : `${title} | Tangier Insider`;
+const year = new Date().getFullYear();
+// Only reviewed (non-draft) guides appear in the menu, so no link ever points to a missing page.
+const navOrder = ['ferry-tarifa-tangier', 'things-to-do-in-tangier', 'is-tangier-safe', 'darija-for-travelers'];
+const navLabels: Record<string, string> = {
+  'ferry-tarifa-tangier': 'Ferry',
+  'things-to-do-in-tangier': 'Things to do',
+  'is-tangier-safe': 'Safety',
+  'darija-for-travelers': 'Darija',
+};
+const published = (await getCollection('guides', ({ data }) => !data.draft)).map((g) => g.id);
+const navItems = navOrder.filter((id) => published.includes(id));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tangier Insider" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    {updated && <meta property="article:modified_time" content={updated.toISOString()} />}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">Tangier <span>Insider</span></a>
+        <nav class="site-nav" aria-label="Main">
+          {navItems.map((id) => <a href={`/${id}/`}>{navLabels[id]}</a>)}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <nav aria-label="Footer">
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+        </nav>
+        <p>© {year} Tangier Insider. Independent travel guide written by a Tangier local. Not affiliated with any ferry company or government office. Always confirm prices and schedules on official websites.</p>
+      </div>
+    </footer>
+  </body>
+</html>
