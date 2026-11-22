@@ -70,6 +70,10 @@ These are the amounts you'll hear most in shops, cafés and taxis.
 💡 Notice the small change: up to 10 people say <strong>drahem</strong> (dirhams), from 11 upwards they switch to <strong>derhem</strong>. Moroccans often write the "a" sound in <em>ashra</em> with the number 3 (3achra) when texting, so don't be surprised if you see it.
 </div>
 
+<div class="note">
+💡 <strong>Francs, not dirhams?</strong> Among themselves, people in Tangier often count in <strong>frank</strong> (francs): <strong>100 frank = 1 dirham</strong>, so "500 frank" means 5 dirhams. With tourists, sellers usually switch to dirhams. If a price sounds surprisingly high, just ask whether it's in dirhams.
+</div>
+
 ## Getting around
 
 <div class="table-scroll">
