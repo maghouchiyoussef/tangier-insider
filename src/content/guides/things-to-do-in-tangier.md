@@ -39,7 +39,7 @@ A quiet clifftop neighbourhood near Café Hafa. [Youssef: your tip]
 ## Outside the city
 
 ### Easiest way: the tourist bus
-The red **City Tour Tanger** hop-on hop-off bus goes all the way to **Cap Spartel** and loops around the whole city. According to its official website, a **48-hour ticket** covers **2 routes** and **more than 20 stops**, with an audio guide in 8 languages and free Wi-Fi on board. You can get on and off as many times as you like.
+The red **City Tour Tanger** hop-on hop-off bus goes all the way to **Cap Spartel** and loops around the whole city. According to its official website, a **48-hour ticket** covers **2 routes** and **more than 20 stops**, with an audio guide in 8 languages and free Wi-Fi on board. You can get on and off as many times as you like. Visitors quoted on the official site describe one line covering the old and modern city and another running along the coast, with a stop at the train station: handy if you arrive by train.
 
 Prices on the official website start **from 6 €** (cheaper tickets are reserved for Moroccan citizens and residents). Check the exact adult price for your dates on the official site before you buy.
 
