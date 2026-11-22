@@ -1,6 +1,6 @@
 ---
 title: "Darija for travelers: Moroccan Arabic words you'll actually use"
-description: "Learn the basic Darija (Moroccan Arabic) you need in Tangier: greetings, please and thank you, prices, taxis, cafés and how to say no politely."
+description: "Learn the basic Darija (Moroccan Arabic) you need in Tangier: greetings, please and thank you, prices in dirhams, taxis, cafés and how to say no politely."
 updated: 2026-11-22
 draft: false
 ---
@@ -47,6 +47,27 @@ Darija is the Arabic spoken every day in Morocco. It is quite different from the
 | Lower it a little | Nqes shwiya |
 | A lot / very | Bzaf |
 
+</div>
+
+## Saying prices in dirhams
+
+These are the amounts you'll hear most in shops, cafés and taxis.
+
+<div class="table-scroll">
+
+| Amount | Darija | How to say it |
+|---|---|---|
+| 2 dirhams | Zouj drahem | zoozh dra-HEM |
+| 3 dirhams | Tlata drahem | TLA-ta dra-HEM |
+| 5 dirhams | Khamsa drahem | KHAM-sa dra-HEM |
+| 10 dirhams | Ashra drahem | ASH-ra dra-HEM |
+| 20 dirhams | Ashrin derhem | ash-REEN DER-hem |
+| 50 dirhams | Khamsin derhem | kham-SEEN DER-hem |
+
+</div>
+
+<div class="note">
+💡 Notice the small change: up to 10 people say <strong>drahem</strong> (dirhams), from 11 upwards they switch to <strong>derhem</strong>. Moroccans often write the "a" sound in <em>ashra</em> with the number 3 (3achra) when texting, so don't be surprised if you see it.
 </div>
 
 ## Getting around
