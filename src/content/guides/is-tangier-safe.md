@@ -1,6 +1,6 @@
 ---
 title: "Is Tangier safe? An honest answer from a local"
-description: "Is Tangier safe for tourists, women and solo travelers? What to expect, unofficial guides, taxis, safety at night and the emergency numbers, from someone who lives here."
+description: "Is Tangier safe for tourists, women and solo travelers? What to expect, unofficial guides, the medina, scams, taxis, safety at night and the emergency numbers, from someone who lives here."
 updated: 2026-11-22
 draft: true
 ---
@@ -13,6 +13,12 @@ draft: true
 Honestly, no. Whether you come alone or in a group, Tangier is easy to explore on your own. Every day I see tourists walking around the medina and the city without a guide, often alone or in pairs.
 
 People may still offer to "show you the way" at the port or in the medina, then ask for money. If you don't want a guide, say **"la, shukran"** (no, thank you) and keep walking. If you do want one, book an official guide through your hotel.
+
+### Getting lost in the medina
+The old medina is a maze of narrow streets, and some of them really are dead ends. Download an offline map before you go and keep an eye on where you are. If you get lost, head back towards a main street or ask a shopkeeper rather than someone who approaches you.
+
+### Scams
+Like in any tourist city, small scams exist, so stay attentive wherever you go. The good news: the police in Tangier are visible and protective of tourists. Living here, I've seen them step in quickly when someone bothers a visitor.
 
 ### Taxis
 - **Petit taxi** (small blue cars, inside the city): when you get in, ask the driver to switch on the **meter** ("le compteur").
