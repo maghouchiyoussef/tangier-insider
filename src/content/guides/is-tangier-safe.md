@@ -15,8 +15,10 @@ draft: true
 
 ## The most common problems (and how to avoid them)
 
-### Unofficial guides
-People may offer to "show you the way" at the port or in the medina, then ask for money. If you don't want a guide, say **"la, shukran"** (no, thank you) and keep walking. If you do want one, book an official guide through your hotel. [Youssef: add your own advice]
+### Do you need a guide?
+Honestly, no. Whether you come alone or in a group, Tangier is easy to explore on your own. Every day I see tourists walking around the medina and the city without a guide, often alone or in pairs.
+
+People may still offer to "show you the way" at the port or in the medina, then ask for money. If you don't want a guide, say **"la, shukran"** (no, thank you) and keep walking. If you do want one, book an official guide through your hotel.
 
 ### "The road is closed"
 A classic: someone tells you the street ahead is closed and offers to take you another way, usually towards a shop. Check your map and carry on.
@@ -29,7 +31,9 @@ As in any busy city, keep your phone and wallet in a front pocket in crowded pla
 
 ## At night
 
-The main streets and the seafront are lively in the evening. Late at night, prefer well-lit main streets over empty alleys in the medina, and take a taxi if you are unsure. [Youssef: add specific advice you are confident about]
+The main streets and the seafront are lively in the evening. At night, simply stay on the main streets where there are people around, rather than empty alleys in the medina, and take a taxi if you are unsure.
+
+From what I see living here, it is rare for a tourist to run into a serious problem such as a robbery or an assault. Use the same common sense as in any big city and you'll most likely be fine.
 
 ## Women travelers
 
