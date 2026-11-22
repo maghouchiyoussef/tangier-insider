@@ -39,7 +39,9 @@ A quiet clifftop neighbourhood near Café Hafa. [Youssef: your tip]
 ## Outside the city
 
 ### Easiest way: the tourist bus
-A hop-on hop-off tourist bus goes all the way to **Cap Spartel** and loops around the whole city, so it's a simple way to see the coast and the main sights in one go. Expect **around 150 dirhams** for visitors (Moroccan residents pay less, around 50 dirhams). Prices are a local estimate from November 2026: check at the bus stop before you buy.
+The red **City Tour Tanger** hop-on hop-off bus goes all the way to **Cap Spartel** and loops around the whole city. According to its official website, a **48-hour ticket** covers **2 routes** and **more than 20 stops**, with an audio guide in 8 languages and free Wi-Fi on board. You can get on and off as many times as you like.
+
+Prices on the official website start **from 6 €** (cheaper tickets are reserved for Moroccan citizens and residents). Check the exact adult price for your dates on the official site before you buy.
 
 ### Cap Spartel
 The headland where the Mediterranean meets the Atlantic, with a lighthouse. [VERIFY how to get there and taxi price]
