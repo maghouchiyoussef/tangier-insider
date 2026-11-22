@@ -29,7 +29,9 @@ A historic building inside the medina with a surprising story. [VERIFY opening h
 ## Views and cafés
 
 ### Café Hafa
-A terraced café above the sea, famous for mint tea and sunsets. [Youssef: best time to go]
+A terraced café above the sea, famous for mint tea and sunsets.
+
+**Local tip:** go in the **morning** if you want it calm and almost empty. For the famous **sunset view**, come in the late afternoon, but expect it to be busy.
 
 ### The Marshan
 A quiet clifftop neighbourhood near Café Hafa. [Youssef: your tip]
