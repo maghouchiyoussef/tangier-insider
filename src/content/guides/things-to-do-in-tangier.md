@@ -101,7 +101,7 @@ Sea caves with a famous opening shaped like Africa, near Cap Spartel. There is a
 A long Atlantic beach close to the caves, nice for a walk after visiting them.
 
 ### Playa Blanca
-A beach with white houses below green hills, seen here from the clifftop viewpoint above it.
+A beach with white houses below green hills, about **15 km from Tangier** on the coastal road towards **Ksar Sghir**. Without a car, take a **grand taxi** (agree on the price before you get in) or book a ride with the **inDrive** app.
 
 <figure>
 <img src="/images/playa-blanca-viewpoint.webp" width="860" height="1110" alt="Playa Blanca beach seen from a clifftop viewpoint with the sea and hills" loading="lazy" decoding="async" />
