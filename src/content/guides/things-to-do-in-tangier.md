@@ -36,6 +36,9 @@ A quiet clifftop neighbourhood near Café Hafa. [Youssef: your tip]
 
 ## Outside the city
 
+### Easiest way: the tourist bus
+A hop-on hop-off tourist bus goes all the way to **Cap Spartel** and loops around the whole city, so it's a simple way to see the coast and the main sights in one go. Expect **around 150 dirhams** for visitors (Moroccan residents pay less, around 50 dirhams). Prices are a local estimate from November 2026: check at the bus stop before you buy.
+
 ### Cap Spartel
 The headland where the Mediterranean meets the Atlantic, with a lighthouse. [VERIFY how to get there and taxi price]
 
