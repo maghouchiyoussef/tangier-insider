@@ -2,7 +2,7 @@
 title: "Tarifa to Tangier ferry: the complete guide (by a local)"
 description: "Tarifa–Tangier ferry guide: which companies run it, real ticket prices, crossing time, check-in, passport control on board, the time difference, and Tanger Med vs Tangier city port."
 updated: 2026-11-22
-draft: true
+draft: false
 ---
 
 <!-- Prices checked on the operators' official sites on 22 November 2026. -->
@@ -83,7 +83,7 @@ Expect people offering to guide you as you leave the port. A polite "la, shukran
 
 ## Money
 
-The Moroccan dirham can't easily be bought outside Morocco. Plan to withdraw cash from an ATM once you arrive: the new town, a few minutes' walk from the port, has plenty of banks. Many small shops and taxis only take cash.
+The Moroccan dirham can't easily be bought outside Morocco. Good news: as soon as you walk out of the port you'll find **plenty of ATMs and exchange offices** (bureaux de change). Withdraw or change what you need there. Many small shops and taxis only take cash.
 
 ## Day trip from Tarifa: a simple plan
 
