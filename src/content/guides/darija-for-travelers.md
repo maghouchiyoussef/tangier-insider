@@ -62,13 +62,14 @@ These are the amounts you'll hear most in shops, cafés and taxis.
 | 5 dirhams | Khamsa drahem | KHAM-sa dra-HEM |
 | 10 dirhams | Ashra drahem | ASH-ra dra-HEM |
 | 11 dirhams | Hdash l-derhem | HDASH l-DER-hem |
+| 12 dirhams | Tnash l-derhem | TNASH l-DER-hem |
 | 20 dirhams | Ashrin derhem | ash-REEN DER-hem |
 | 50 dirhams | Khamsin derhem | kham-SEEN DER-hem |
 
 </div>
 
 <div class="note">
-💡 Notice the small change: up to 10 people say <strong>drahem</strong> (dirhams). From 11 to 19 it becomes <strong>l-derhem</strong> (11 is <em>hdash l-derhem</em>, 12 is "twelve" + <em>l-derhem</em>, and so on), and from 20 it is simply <strong>derhem</strong>. Moroccans often write the "a" sound in <em>ashra</em> with the number 3 (3achra) when texting, so don't be surprised if you see it.
+💡 Notice the small change: up to 10 people say <strong>drahem</strong> (dirhams). From 11 to 19 it becomes <strong>l-derhem</strong> (11 is <em>hdash l-derhem</em>, 12 is <em>tnash l-derhem</em>, and so on), and from 20 it is simply <strong>derhem</strong>. Moroccans often write the "a" sound in <em>ashra</em> with the number 3 (3achra) when texting, so don't be surprised if you see it.
 </div>
 
 <div class="note">
