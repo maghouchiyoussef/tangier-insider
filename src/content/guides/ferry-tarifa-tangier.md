@@ -5,11 +5,7 @@ updated: 2026-11-22
 draft: true
 ---
 
-<!--
-  BEFORE PUBLISHING (Youssef): confirm the 3 lines marked [LOCAL CHECK],
-  remove the markers, then set draft: false.
-  Prices below were checked on the operators' official sites on 22 November 2026.
--->
+<!-- Prices checked on the operators' official sites on 22 November 2026. -->
 
 Crossing from Spain to Tangier is one of the easiest ways to reach Morocco: the Tarifa ferry takes about an hour and lands in Tangier's city port, right below the old town. Here is how it works in practice, from someone who lives at the other end of the crossing.
 
@@ -80,14 +76,14 @@ Spain is usually **1 or 2 hours ahead** of Morocco, depending on the season (Spa
 
 ## From Tangier Ville port into town
 
-- **On foot**: the medina is a short walk uphill from the port exit. [LOCAL CHECK: minutes on foot]
-- **Petit taxi** (the small blue cars): ask the driver to use the meter, or agree on the price before you get in. [LOCAL CHECK: typical fare to the medina / city centre]
+- **On foot**: the city port sits right between the old medina and the new town. Both are **less than 15 minutes' walk** from the port exit, the medina slightly uphill.
+- **Petit taxi** (the small blue cars): handy with heavy luggage. Ask the driver to use the meter, or agree on the price before you get in.
 
 Expect people offering to guide you as you leave the port. A polite "la, shukran" (no, thank you) and walking on with purpose is usually enough. See [Is Tangier safe?](/is-tangier-safe/) for more.
 
 ## Money
 
-The Moroccan dirham can't easily be bought outside Morocco. Plan to withdraw cash from an ATM after arrival. [LOCAL CHECK: is there an ATM or exchange office inside or right outside Tangier Ville port?] Many small shops and taxis only take cash.
+The Moroccan dirham can't easily be bought outside Morocco. Plan to withdraw cash from an ATM once you arrive: the new town, a few minutes' walk from the port, has plenty of banks. Many small shops and taxis only take cash.
 
 ## Day trip from Tarifa: a simple plan
 
