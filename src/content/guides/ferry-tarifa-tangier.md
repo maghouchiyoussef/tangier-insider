@@ -11,7 +11,7 @@ Crossing from Spain to Tangier is one of the easiest ways to reach Morocco: the 
 
 <figure>
 <img src="/images/tangier-bay-port-beach.webp" width="1600" height="1066" alt="Tangier city port, marina and beach seen from above, with cruise ships in the harbour" loading="lazy" decoding="async" />
-<figcaption>Tangier's city port, marina and beach. Photo: Tangier Insider</figcaption>
+<figcaption>Tangier's city port, marina and beach</figcaption>
 </figure>
 
 ## Two routes, two different ports
@@ -83,7 +83,7 @@ Spain is usually **1 or 2 hours ahead** of Morocco, depending on the season (Spa
 
 <figure>
 <img src="/images/tangier-ville-port-view.webp" width="1068" height="1600" alt="View over Tangier Ville port and its terminal from a terrace in town" loading="lazy" decoding="async" />
-<figcaption>Tangier Ville port, a short walk from the old town. Photo: Tangier Insider</figcaption>
+<figcaption>Tangier Ville port, a short walk from the old town</figcaption>
 </figure>
 
 - **On foot**: the city port sits right between the old medina and the new town. Both are **less than 15 minutes' walk** from the port exit, the medina slightly uphill.

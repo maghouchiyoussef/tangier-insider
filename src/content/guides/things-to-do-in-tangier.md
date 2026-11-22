@@ -19,7 +19,7 @@ Narrow streets, small shops and everyday life. Get a little lost; it's part of t
 
 <figure>
 <img src="/images/tangier-medina-street.webp" width="900" height="1600" alt="A pedestrian street in Tangier's medina with shops, a hotel sign and a restaurant" loading="lazy" decoding="async" />
-<figcaption>A street in Tangier's medina. Photo: Tangier Insider</figcaption>
+<figcaption>A street in Tangier's medina</figcaption>
 </figure>
 
 ### Grand Socco and Petit Socco
