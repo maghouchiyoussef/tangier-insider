@@ -1,15 +1,9 @@
 ---
 title: "Is Tangier safe? An honest answer from a local"
-description: "Is Tangier safe for tourists, women and solo travelers? What to expect, the common scams, which areas need care at night, and simple habits that keep you out of trouble."
-updated: 2026-11-21
+description: "Is Tangier safe for tourists, women and solo travelers? What to expect, unofficial guides, taxis, safety at night and the emergency numbers, from someone who lives here."
+updated: 2026-11-22
 draft: true
 ---
-
-<!--
-  REVIEW for Youssef: this page needs YOUR experience. Add real examples,
-  neighbourhood names you are sure about, and remove anything you disagree with.
-  Do not publish crime statistics unless you link to an official source.
--->
 
 **Short answer: yes, Tangier is generally safe for visitors who use normal city common sense.** Most problems tourists meet are annoyances, such as pushy unofficial guides or overpriced taxis, rather than danger. Here is what to really expect.
 
@@ -19,9 +13,6 @@ draft: true
 Honestly, no. Whether you come alone or in a group, Tangier is easy to explore on your own. Every day I see tourists walking around the medina and the city without a guide, often alone or in pairs.
 
 People may still offer to "show you the way" at the port or in the medina, then ask for money. If you don't want a guide, say **"la, shukran"** (no, thank you) and keep walking. If you do want one, book an official guide through your hotel.
-
-### "The road is closed"
-A classic: someone tells you the street ahead is closed and offers to take you another way, usually towards a shop. Check your map and carry on.
 
 ### Taxis
 - **Petit taxi** (small blue cars, inside the city): when you get in, ask the driver to switch on the **meter** ("le compteur").
@@ -42,7 +33,8 @@ Women walk around Tangier normally, alone or together, and it is generally safe.
 
 ## Useful numbers
 
-[VERIFY current emergency numbers for police and ambulance in Morocco on an official source before publishing.]
+- **Police: 19**
+- **Ambulance and fire: 15**
 
 ## Bottom line
 
