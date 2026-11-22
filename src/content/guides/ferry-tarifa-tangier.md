@@ -9,6 +9,11 @@ draft: false
 
 Crossing from Spain to Tangier is one of the easiest ways to reach Morocco: the Tarifa ferry takes about an hour and lands in Tangier's city port, right below the old town. Here is how it works in practice, from someone who lives at the other end of the crossing.
 
+<figure>
+<img src="/images/tangier-bay-port-beach.webp" width="1600" height="1066" alt="Tangier city port, marina and beach seen from above, with cruise ships in the harbour" loading="lazy" decoding="async" />
+<figcaption>Tangier's city port, marina and beach. Photo: Tangier Insider</figcaption>
+</figure>
+
 ## Two routes, two different ports
 
 This is the most common mistake visitors make: the two main crossings arrive at **two different ports**, far apart.
@@ -75,6 +80,11 @@ You will need a passport valid for your stay. Check whether you need a visa on y
 Spain is usually **1 or 2 hours ahead** of Morocco, depending on the season (Spain uses summer time). Departure times are always in the **local time of the port you leave from**. Check the time zone on your ticket and give yourself a margin.
 
 ## From Tangier Ville port into town
+
+<figure>
+<img src="/images/tangier-ville-port-view.webp" width="1068" height="1600" alt="View over Tangier Ville port and its terminal from a terrace in town" loading="lazy" decoding="async" />
+<figcaption>Tangier Ville port, a short walk from the old town. Photo: Tangier Insider</figcaption>
+</figure>
 
 - **On foot**: the city port sits right between the old medina and the new town. Both are **less than 15 minutes' walk** from the port exit, the medina slightly uphill.
 - **Petit taxi** (the small blue cars): handy with heavy luggage. A ride to the city centre or the medina costs **about 15 dirhams** (local price, November 2026). Ask the driver to use the meter, or agree on the price before you get in.

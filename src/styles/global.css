@@ -74,3 +74,11 @@ th { background: #f1efe8; }
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); padding: 24px 0 40px; font-size: .9rem; color: var(--muted); }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 8px; }
+
+/* Photos inside guides */
+figure { margin: 1.6em 0; }
+figure img {
+  display: block; margin: 0 auto; width: auto; max-width: 100%;
+  max-height: 75vh; object-fit: contain;
+}
+figcaption { text-align: center; font-size: .85rem; color: var(--muted); margin-top: 6px; }

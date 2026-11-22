@@ -17,6 +17,11 @@ The walled upper part of the medina, with views over the Strait to Spain on a cl
 ### The medina
 Narrow streets, small shops and everyday life. Get a little lost; it's part of the fun. Some alleys are dead ends, so keep an offline map handy (see [Is Tangier safe?](/is-tangier-safe/)).
 
+<figure>
+<img src="/images/tangier-medina-street.webp" width="900" height="1600" alt="A pedestrian street in Tangier's medina with shops, a hotel sign and a restaurant" loading="lazy" decoding="async" />
+<figcaption>A street in Tangier's medina. Photo: Tangier Insider</figcaption>
+</figure>
+
 ### Grand Socco and Petit Socco
 The Grand Socco is the busy square at the medina's entrance; the Petit Socco is the small café square inside.
 
