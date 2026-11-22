@@ -30,6 +30,11 @@ Narrow streets, small shops and everyday life. Get a little lost; it's part of t
 ### Grand Socco and Petit Socco
 The Grand Socco is the busy square at the medina's entrance; the Petit Socco is the small café square inside.
 
+<figure>
+<img src="/images/petit-socco-night.webp" width="1500" height="1130" alt="Petit Socco square in Tangier at night with lit cafés and a sign pointing to the Kasbah" loading="lazy" decoding="async" />
+<figcaption>Petit Socco at night. Photo: Tangier Insider</figcaption>
+</figure>
+
 ### Tangier American Legation Museum
 A historic building inside the medina with a surprising story: it was the first property the United States owned abroad.
 
@@ -49,6 +54,22 @@ A terraced café above the sea, famous for mint tea and sunsets. The sign at the
 
 ### The Marshan
 A quiet clifftop neighbourhood near Café Hafa, nice for a walk with sea views.
+
+### Merkala seafront
+The coastal road below the Marshan, a favourite place for locals to walk and watch the sunset over the Strait.
+
+<figure>
+<img src="/images/merkala-seafront-sunset.webp" width="1475" height="1060" alt="Sunset over the sea along the Merkala seafront road in Tangier" loading="lazy" decoding="async" />
+<figcaption>Sunset on the Merkala seafront. Photo: Tangier Insider</figcaption>
+</figure>
+
+### Tanja Marina Bay
+The modern marina next to the city port, with yachts, a waterfront promenade and views of the cruise ships in the harbour.
+
+<figure>
+<img src="/images/tanja-marina-bay.webp" width="1500" height="650" alt="Yachts in Tanja Marina Bay with a cruise ship and white buildings in the background" loading="lazy" decoding="async" />
+<figcaption>Tanja Marina Bay. Photo: Tangier Insider</figcaption>
+</figure>
 
 ## Outside the city
 
@@ -78,6 +99,14 @@ Sea caves with a famous opening shaped like Africa, near Cap Spartel. There is a
 
 ### Achakar beach
 A long Atlantic beach close to the caves, nice for a walk after visiting them.
+
+### Playa Blanca
+A beach with white houses below green hills, seen here from the clifftop viewpoint above it.
+
+<figure>
+<img src="/images/playa-blanca-viewpoint.webp" width="860" height="1110" alt="Playa Blanca beach seen from a clifftop viewpoint with the sea and hills" loading="lazy" decoding="async" />
+<figcaption>Playa Blanca from the viewpoint above. Photo: Tangier Insider</figcaption>
+</figure>
 
 ## If you only have one day
 
