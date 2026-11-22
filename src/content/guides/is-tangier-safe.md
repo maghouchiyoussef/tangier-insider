@@ -2,7 +2,7 @@
 title: "Is Tangier safe? An honest answer from a local"
 description: "Is Tangier safe for tourists, women and solo travelers? What to expect, unofficial guides, the medina, scams, taxis, safety at night and the emergency numbers, from someone who lives here."
 updated: 2026-11-22
-draft: true
+draft: false
 ---
 
 **Short answer: yes, Tangier is generally safe for visitors who use normal city common sense.** Most problems tourists meet are annoyances, such as pushy unofficial guides or overpriced taxis, rather than danger. Here is what to really expect.
