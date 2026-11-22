@@ -12,6 +12,11 @@ Tangier is small enough to see the highlights in a day, but it rewards a slower 
 ### The Kasbah
 The walled upper part of the medina, with views over the Strait to Spain on a clear day.
 
+<figure>
+<img src="/images/tangier-kasbah-walls-port-view.webp" width="1160" height="1600" alt="The Kasbah walls near Bab el Bahr with a view down to Tangier port and the bay" loading="lazy" decoding="async" />
+<figcaption>The Kasbah walls near Bab el Bahr, looking down on the port. Photo: Tangier Insider</figcaption>
+</figure>
+
 **Kasbah Museum (Dar el Makhzen):** open **10:00–18:00**, usually **closed on Tuesdays**. Entry: **30 MAD** (adults), 15 MAD (ages 12–18), 5 MAD (under 12). The official page is not fully consistent about closing days, so check before you go: [Fondation Nationale des Musées](https://fnm.ma/museums/28).
 
 ### The medina
@@ -19,7 +24,7 @@ Narrow streets, small shops and everyday life. Get a little lost; it's part of t
 
 <figure>
 <img src="/images/tangier-medina-street.webp" width="900" height="1600" alt="A pedestrian street in Tangier's medina with shops, a hotel sign and a restaurant" loading="lazy" decoding="async" />
-<figcaption>A street in Tangier's medina</figcaption>
+<figcaption>A street in Tangier's medina. Photo: Pexels</figcaption>
 </figure>
 
 ### Grand Socco and Petit Socco
@@ -33,7 +38,12 @@ Open **Monday to Friday, 10:00–13:00 and 15:00–17:00** (weekends for groups 
 ## Views and cafés
 
 ### Café Hafa
-A terraced café above the sea, famous for mint tea and sunsets.
+A terraced café above the sea, famous for mint tea and sunsets. The sign at the entrance says it was founded in 1921.
+
+<figure>
+<img src="/images/cafe-hafa-sign-1921.webp" width="1600" height="1279" alt="Café Hafa entrance sign reading Café Hafa fondé 1921" loading="lazy" decoding="async" />
+<figcaption>Café Hafa, founded in 1921. Photo: Tangier Insider</figcaption>
+</figure>
 
 **Local tip:** go in the **morning** if you want it calm and almost empty. For the famous **sunset view**, come in the late afternoon, but expect it to be busy.
 

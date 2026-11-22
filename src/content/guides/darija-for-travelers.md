@@ -91,6 +91,11 @@ These are the amounts you'll hear most in shops, cafés and taxis.
 
 ## In a café
 
+<figure>
+<img src="/images/moroccan-mint-tea.webp" width="1153" height="1600" alt="Two glasses of Moroccan mint tea and a pastry on a mosaic table" loading="lazy" decoding="async" />
+<figcaption>Atay (mint tea) with a pastry. Photo: Tangier Insider</figcaption>
+</figure>
+
 <div class="table-scroll">
 
 | English | Darija |
