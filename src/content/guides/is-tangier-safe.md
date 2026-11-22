@@ -23,8 +23,9 @@ People may still offer to "show you the way" at the port or in the medina, then 
 ### "The road is closed"
 A classic: someone tells you the street ahead is closed and offers to take you another way, usually towards a shop. Check your map and carry on.
 
-### Taxi prices
-Petit taxis should use the meter. Ask before you get in, or agree on the price first. [VERIFY typical fares]
+### Taxis
+- **Petit taxi** (small blue cars, inside the city): when you get in, ask the driver to switch on the **meter** ("le compteur").
+- **Grand taxi** (bigger cars, for longer trips such as **Asilah** or **Chefchaouen**): there is no meter, so ask **how much** and confirm **where you're going** before you get in.
 
 ### Pickpockets
 As in any busy city, keep your phone and wallet in a front pocket in crowded places like the Grand Socco and the medina's main streets.
@@ -37,7 +38,7 @@ From what I see living here, it is rare for a tourist to run into a serious prob
 
 ## Women travelers
 
-[Youssef: write this section honestly from local knowledge, or ask women you know for their advice. It matters to readers and should not be generic.]
+Women walk around Tangier normally, alone or together, and it is generally safe. The main thing to watch out for is people approaching you to ask for money: a firm "la, shukran" and walking on is usually enough.
 
 ## Useful numbers
 
