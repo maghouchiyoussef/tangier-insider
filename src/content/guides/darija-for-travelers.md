@@ -1,15 +1,9 @@
 ---
 title: "Darija for travelers: Moroccan Arabic words you'll actually use"
 description: "Learn the basic Darija (Moroccan Arabic) you need in Tangier: greetings, please and thank you, prices, taxis, numbers and how to say no politely."
-updated: 2026-11-21
-draft: true
+updated: 2026-11-22
+draft: false
 ---
-
-<!--
-  REVIEW for Youssef: you are the native speaker here. Check every spelling and
-  pronunciation, change anything that sounds unnatural in Tangier, and consider
-  adding short audio recordings of your own voice later.
--->
 
 Darija is the Arabic spoken every day in Morocco. It is quite different from the Arabic taught in schools, and it mixes in words from French and Spanish, especially in the north. You don't need much: a few words go a long way, and people in Tangier really appreciate the effort.
 
