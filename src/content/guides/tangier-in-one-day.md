@@ -19,7 +19,7 @@ One day is enough to get a real feel for Tangier if you keep it simple and walk.
 
 ## Lunch
 
-[Youssef: one or two lunch tips in or near the medina]
+You'll find restaurants both in the **old medina** and in the **new town**. Go for a traditional Moroccan restaurant and try a **tagine**, **couscous** or **lamb with prunes** (*lham b'barkouk*). If you just want something quick, there are plenty of fast-food places too.
 
 ## Afternoon: Café Hafa and the Marshan
 
