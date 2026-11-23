@@ -8,6 +8,7 @@ const icons: Record<string, string> = {
   'is-tangier-safe': '🛡️',
   'darija-for-travelers': '🗣️',
   'tangier-train-al-boraq': '🚄',
+  'tangier-in-one-day': '📅',
 };
 const guides = (await getCollection('guides', ({ data }) => !data.draft))
   .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());

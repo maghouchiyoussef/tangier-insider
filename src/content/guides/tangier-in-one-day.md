@@ -2,7 +2,7 @@
 title: "Tangier in one day: a local's itinerary"
 description: "How to spend one day in Tangier: a simple, walkable plan from the medina and the Kasbah to Café Hafa and the Merkala sunset, with tips from a local."
 updated: 2026-11-23
-draft: true
+draft: false
 ---
 
 One day is enough to get a real feel for Tangier if you keep it simple and walk. This plan works whether you arrive by ferry from Tarifa, by train, or you're staying in town.
