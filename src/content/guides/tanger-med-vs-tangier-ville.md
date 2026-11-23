@@ -5,8 +5,6 @@ updated: 2026-11-23
 draft: true
 ---
 
-<!-- DRAFT: waiting for Youssef's local info on getting from Tanger Med to the city (grand taxi price, tips). -->
-
 It's the most common mistake visitors make: they book a cheap ferry "to Tangier" and only realise on arrival that they've landed at **Tanger Med**, a big industrial port outside the city. Here's how the two ports compare.
 
 <figure>
@@ -44,7 +42,15 @@ The Algeciras–Tanger Med ticket is often a few euros cheaper. But once you add
 
 According to the [official Tanger Med passenger website](https://www.tangermed-passagers.com/fr/mon-voyage/depuis-tanger-med), you can continue by **taxi**, the **ALSA** bus or a shuttle. The drive takes about **20–30 minutes**. Prices are not published there, so agree on any taxi fare before you set off.
 
-[Youssef: grand taxi price and tips]
+From experience, here are your real options:
+
+- **A private taxi ("course")**: the quickest. Negotiate the price before you get in; around **100 dirhams** is a reasonable maximum to Tangier.
+- **A regional grand taxi**: shared taxis passing through from Fnideq or Dalia sometimes have a free seat. If one does, it's cheaper.
+- **The bus**: the cheapest, around **8 dirhams** (local estimate). You need to walk to the bus stop outside the port.
+
+Buses and shared grand taxis usually drop you near **Tangier Ville train station**, about 20 minutes by petit taxi from the city centre (see the [Al Boraq guide](/tangier-train-al-boraq/)).
+
+**Local tip:** if the taxi price at the port is too high, be patient: walk out and take the bus or a shared taxi instead.
 
 ## Passport control
 
