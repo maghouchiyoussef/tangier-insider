@@ -13,11 +13,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = Astro.url.pathname === '/' ? title : `${title} | Tangier Insider`;
 const year = new Date().getFullYear();
 // Only reviewed (non-draft) guides appear in the menu, so no link ever points to a missing page.
-const navOrder = ['ferry-tarifa-tangier', 'things-to-do-in-tangier', 'is-tangier-safe', 'darija-for-travelers'];
+const navOrder = ['ferry-tarifa-tangier', 'things-to-do-in-tangier', 'is-tangier-safe', 'tangier-train-al-boraq', 'darija-for-travelers'];
 const navLabels: Record<string, string> = {
   'ferry-tarifa-tangier': 'Ferry',
   'things-to-do-in-tangier': 'Things to do',
   'is-tangier-safe': 'Safety',
+  'tangier-train-al-boraq': 'Train',
   'darija-for-travelers': 'Darija',
 };
 const published = (await getCollection('guides', ({ data }) => !data.draft)).map((g) => g.id);
