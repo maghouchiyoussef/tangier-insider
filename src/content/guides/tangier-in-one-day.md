@@ -29,9 +29,12 @@ From the Kasbah, it's an easy walk to the **Marshan** neighbourhood and **Café 
 
 Head down to the **Merkala seafront**, where locals stroll and watch the sun go down over the Strait. If you enjoy walking, go on foot; otherwise a petit taxi gets you there quickly.
 
-## Evening: back to the Petit Socco
+## Evening: Petit Socco or the seafront
 
-End the day at the **Petit Socco**, lively in the evening with its cafés.
+End the day where you prefer:
+
+- **The Petit Socco**, in the medina, lively in the evening with its cafés.
+- **The beach promenade and Tanja Marina Bay**, along the seafront in the new town, for an evening walk by the sea.
 
 ## Before you go
 
