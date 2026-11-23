@@ -40,7 +40,7 @@ One adult, one way, "from" prices shown on [ONCF Voyages](https://www.oncf-voyag
 
 </div>
 
-The cheapest seats go first, so book early. With the **"Yalla Al Boraq"** offer, tickets bought **at least 7 days ahead** can cost **89 MAD in 2nd class and 129 MAD in 1st class**, while seats last ([details](https://www.oncf-voyages.ma/yalla-al-boraq)).
+The cheapest seats go first, so booking early usually helps, but prices are not fixed. ONCF sometimes runs promotions such as **"Yalla Al Boraq"** with lower fares, only during certain periods, so check the [official site](https://www.oncf-voyages.ma/) for current offers.
 
 ## How to buy your ticket
 
