@@ -104,8 +104,8 @@ A long Atlantic beach close to the caves, nice for a walk after visiting them.
 A beach with white houses below green hills, about **15 km from Tangier** on the coastal road towards **Ksar Sghir**. Without a car, take a **grand taxi** (agree on the price before you get in) or book a ride with the **inDrive** app.
 
 <figure>
-<img src="/images/playa-blanca-viewpoint.webp" width="860" height="1110" alt="Playa Blanca beach seen from a clifftop viewpoint with the sea and hills" loading="lazy" decoding="async" />
-<figcaption>Playa Blanca from the viewpoint above. Photo: Tangier Insider</figcaption>
+<img src="/images/playa-blanca-beach.webp" width="1334" height="1600" alt="Playa Blanca beach with white houses below green hills and the sea on the left" loading="lazy" decoding="async" />
+<figcaption>Playa Blanca beach. Photo: Tangier Insider</figcaption>
 </figure>
 
 ## If you only have one day
