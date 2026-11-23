@@ -40,6 +40,11 @@ The Algeciras–Tanger Med ticket is often a few euros cheaper. But once you add
 
 ## Getting from Tanger Med to Tangier
 
+<figure>
+<img src="/images/tanger-med-passenger-terminal.webp" width="1600" height="752" alt="Aerial view of the Tanger Med passenger port with cars queuing at the checkpoint booths and the container port behind" loading="lazy" decoding="async" />
+<figcaption>The Tanger Med passenger port, far from the city. Photo: Tangier Insider</figcaption>
+</figure>
+
 According to the [official Tanger Med passenger website](https://www.tangermed-passagers.com/fr/mon-voyage/depuis-tanger-med), you can continue by **taxi**, the **ALSA** bus or a shuttle. The drive takes about **20–30 minutes**. Prices are not published there, so agree on any taxi fare before you set off.
 
 From experience, here are your real options:
