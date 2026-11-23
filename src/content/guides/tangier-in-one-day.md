@@ -15,7 +15,7 @@ One day is enough to get a real feel for Tangier if you keep it simple and walk.
 2. **The medina**: wander the narrow streets towards the **Petit Socco**. Some alleys are dead ends, so keep an offline map handy.
 3. **The Kasbah**: walk up to the walled upper town for the views over the Strait. The [Kasbah Museum](/things-to-do-in-tangier/) is open 10:00–18:00 and usually closed on Tuesdays.
 
-**Arriving by ferry?** If you only have a small backpack, just walk: the city port sits right between the old medina and the new town, less than 15 minutes on foot from both. With heavy luggage, take a petit taxi. See the [ferry guide](/ferry-tarifa-tangier/).
+**Arriving by ferry?** If you only have a small backpack, just walk: the city port sits right between the old medina and the new town, less than 15 minutes on foot from both. With heavy luggage, drop your bags at your hotel first (take a petit taxi if needed): the medina is much easier to explore with free hands. See the [ferry guide](/ferry-tarifa-tangier/).
 
 ## Lunch
 
