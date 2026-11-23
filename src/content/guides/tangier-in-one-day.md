@@ -5,8 +5,6 @@ updated: 2026-11-23
 draft: true
 ---
 
-<!-- DRAFT: Youssef to review the order, walking times and the lunch tip. -->
-
 One day is enough to get a real feel for Tangier if you keep it simple and walk. This plan works whether you arrive by ferry from Tarifa, by train, or you're staying in town.
 
 ## Morning: the medina and the Kasbah
@@ -23,13 +21,13 @@ You'll find restaurants both in the **old medina** and in the **new town**. Go f
 
 ## Afternoon: Café Hafa and the Marshan
 
-From the Kasbah, walk to the **Marshan** neighbourhood and **Café Hafa** for mint tea on the terraces above the sea. In the afternoon it gets busy, so if you prefer it calm, swap this stop for the morning.
+From the Kasbah, it's an easy walk to the **Marshan** neighbourhood and **Café Hafa**. Stop there for mint tea on the terraces above the sea. In the afternoon it gets busy, so if you prefer it calm, swap this stop for the morning.
 
 **Short on energy?** The red [City Tour Tanger](https://tanger.city-tour.com/en/) hop-on hop-off bus loops around the city and goes out to **Cap Spartel**.
 
 ## Sunset: Merkala
 
-Walk down to the **Merkala seafront**, where locals stroll and watch the sun go down over the Strait.
+Head down to the **Merkala seafront**, where locals stroll and watch the sun go down over the Strait. If you enjoy walking, go on foot; otherwise a petit taxi gets you there quickly.
 
 ## Evening: back to the Petit Socco
 
