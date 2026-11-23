@@ -5,8 +5,6 @@ updated: 2026-11-23
 draft: true
 ---
 
-<!-- DRAFT: waiting for ONCF data (times, prices, buying tickets). Fill every [ONCF] marker from the official site, then publish. -->
-
 Morocco's high-speed train, **Al Boraq**, links Tangier to Rabat and Casablanca. It's the fastest way to continue your trip south after visiting Tangier.
 
 <figure>
@@ -16,15 +14,40 @@ Morocco's high-speed train, **Al Boraq**, links Tangier to Rabat and Casablanca.
 
 ## Journey times and departures
 
-[ONCF: journey time to Rabat Agdal and Casa Voyageurs, number of departures per day, first and last train]
+Checked on the official ONCF website for a weekday in December 2026:
+
+<div class="table-scroll">
+
+| From Tangier Ville to | Journey time |
+|---|---|
+| **Rabat Agdal** | about **1 h 20** |
+| **Casablanca (Casa Voyageurs)** | about **2 h 15** |
+
+</div>
+
+There are departures roughly **every hour**, from about **06:00** to about **21:00** (a few hours are skipped). Check the exact timetable for your date when you book.
 
 ## Ticket prices
 
-[ONCF: 2nd and 1st class one-way prices, with the date checked]
+One adult, one way, "from" prices shown on [ONCF Voyages](https://www.oncf-voyages.ma/) on 23 November 2026, for a weekday in December 2026. The price changes from one train to another:
+
+<div class="table-scroll">
+
+| Tangier Ville to | 2nd class | 1st class |
+|---|---|---|
+| Rabat Agdal | **89–145 MAD** | **129–235 MAD** |
+| Casablanca | **89–165 MAD** | **129–300 MAD** |
+
+</div>
+
+The cheapest seats go first, so book early. With the **"Yalla Al Boraq"** offer, tickets bought **at least 7 days ahead** can cost **89 MAD in 2nd class and 129 MAD in 1st class**, while seats last ([details](https://www.oncf-voyages.ma/yalla-al-boraq)).
 
 ## How to buy your ticket
 
-[ONCF: online / app / at the station, phone tickets accepted?, discounts]
+- **Online or in the app:** buy on [oncf-voyages.ma](https://www.oncf-voyages.ma/) or in the **ONCF Voyages** app.
+- **On your phone:** the e-ticket is a PDF with a barcode that you show on your phone. It works offline, but make sure your battery isn't dead.
+- **Children:** under 4 travel free on your lap; ages 4–15 pay a child fare.
+- **Young travellers:** ONCF sells discount cards for 16–30 year-olds ("Carte Jeune", 20% off). See the official site for conditions.
 
 ## Getting to Tangier Ville station
 
@@ -35,6 +58,3 @@ Take a **petit taxi** (the small blue cars). Typical times and fares in normal t
 
 Ask the driver to use the meter.
 
-## Local tips
-
-[Youssef: any tips]
