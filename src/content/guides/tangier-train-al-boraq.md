@@ -28,7 +28,12 @@ Morocco's high-speed train, **Al Boraq**, links Tangier to Rabat and Casablanca.
 
 ## Getting to Tangier Ville station
 
-From the city port or the old town, a **petit taxi** to the station takes about **10 minutes** in normal traffic and costs around **10–15 dirhams** (local price, November 2026). Ask the driver to use the meter.
+Take a **petit taxi** (the small blue cars). Typical times and fares in normal traffic (local prices, November 2026):
+
+- From the **city port**: about **10 minutes**, around **10–15 dirhams**.
+- From the **city centre**: about **20 minutes**, around **20 dirhams**.
+
+Ask the driver to use the meter.
 
 ## Local tips
 
