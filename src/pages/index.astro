@@ -1,8 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import Collage from '../components/Collage.astro';
+import { looks, fallbackLook } from '../data/looks';
 
-// Order of the cards on the home page (unknown guides go at the end).
 const order = [
   'tangier-in-one-day', 'things-to-do-in-tangier', 'ferry-tarifa-tangier', 'tanger-med-vs-tangier-ville',
   'tangier-train-al-boraq', 'is-tangier-safe', 'darija-for-travelers',
@@ -18,50 +19,71 @@ const tags: Record<string, string> = {
 };
 const rank = (id: string) => (order.includes(id) ? order.indexOf(id) : order.length);
 const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort((a, b) => rank(a.id) - rank(b.id));
-const [featured, ...rest] = guides;
+
+// Slides on top of the home page.
+const slides = [
+  { id: 'intro', kicker: 'Tangier, Morocco', title: 'Tangier, explained by someone who lives here',
+    text: 'Honest, practical advice to cross the Strait, explore the medina and enjoy the city like a local.',
+    href: '/tangier-in-one-day/', cta: 'Plan your day', color: '#122129',
+    photos: ['tangier-kasbah-walls-port-view', 'tangier-medina-rooftops', 'merkala-seafront-sunset'] as [string, string, string] },
+  ...['things-to-do-in-tangier', 'ferry-tarifa-tangier', 'darija-for-travelers']
+    .map((id) => guides.find((g) => g.id === id))
+    .filter((g) => g !== undefined)
+    .map((g) => ({
+      id: g!.id, kicker: tags[g!.id] ?? 'Guide', title: g!.data.title, text: g!.data.description,
+      href: `/${g!.id}/`, cta: 'Read the guide', color: (looks[g!.id] ?? fallbackLook).color,
+      photos: (looks[g!.id] ?? fallbackLook).photos,
+    })),
+];
 ---
 <Base
   title="Tangier Insider: honest Tangier travel guide by a local"
   description="Practical Tangier travel advice from someone who lives here: the Tarifa ferry, what to see, safety, prices and the Darija words you actually need."
-  hero={{
-    image: 'tangier-kasbah-walls-port-view',
-    kicker: 'Tangier, Morocco',
-    title: 'Tangier, explained by someone who lives here',
-    subtitle: 'Honest, practical advice to cross the Strait, explore the medina and enjoy the city like a local.',
-    cta: { href: '/tangier-in-one-day/', label: 'Plan your day' },
-  }}
+  ogImage="tangier-kasbah-walls-port-view"
 >
+  <section class="slider" slot="wide" aria-roledescription="carousel" aria-label="Featured guides">
+    <div class="slides">
+      {slides.map((s, i) => (
+        <div class={i === 0 ? 'slide is-active' : 'slide'} style={`--accent: ${s.color}`} aria-roledescription="slide" aria-label={`${i + 1} of ${slides.length}`} aria-hidden={i === 0 ? undefined : 'true'}>
+          <div class="slide-inner">
+            <div class="slide-text">
+              <p class="kicker">{s.kicker}</p>
+              {i === 0 ? <h1>{s.title}</h1> : <h2>{s.title}</h2>}
+              <p class="slide-sub">{s.text}</p>
+              <a class="btn" href={s.href} tabindex={i === 0 ? undefined : '-1'}>{s.cta}</a>
+            </div>
+            <Collage photos={s.photos} eager={i === 0} />
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="slider-dots">
+      {slides.map((s, i) => (
+        <button type="button" class={i === 0 ? 'dot is-active' : 'dot'} aria-label={`Show slide ${i + 1}: ${s.title}`}></button>
+      ))}
+    </div>
+    <div class="zellige" aria-hidden="true"></div>
+  </section>
+
   <section class="band" slot="wide">
     <div class="band-inner">
       <h2 class="section-title">Don't miss</h2>
-
-      {featured && (
-        <a class="feature" href={`/${featured.id}/`}>
-          {featured.data.image && (
-            <img src={`/images/${featured.data.image}.webp`} alt="" loading="eager" decoding="async" />
-          )}
-          <div class="feature-text">
-            {tags[featured.id] && <span class="tag">{tags[featured.id]}</span>}
-            <h3>{featured.data.title}</h3>
-            <p>{featured.data.description}</p>
-            <span class="more">Read the guide →</span>
-          </div>
-        </a>
-      )}
-
       <div class="photo-cards">
-        {rest.map((g) => (
-          <a class="photo-card" href={`/${g.id}/`}>
-            <div class="photo-card-img">
-              {g.data.image && <img src={`/images/${g.data.image}.webp`} alt="" loading="lazy" decoding="async" />}
-              {tags[g.id] && <span class="tag">{tags[g.id]}</span>}
-            </div>
-            <div class="photo-card-body">
-              <h3>{g.data.title}</h3>
-              <p>{g.data.description}</p>
-            </div>
-          </a>
-        ))}
+        {guides.map((g) => {
+          const look = looks[g.id] ?? fallbackLook;
+          return (
+            <a class="photo-card" href={`/${g.id}/`} style={`--accent: ${look.color}`}>
+              <div class="photo-card-img">
+                <img src={`/images/${look.photos[0]}.webp`} alt="" loading="lazy" decoding="async" />
+                {tags[g.id] && <span class="tag">{tags[g.id]}</span>}
+              </div>
+              <div class="photo-card-body">
+                <h3>{g.data.title}</h3>
+                <p>{g.data.description}</p>
+              </div>
+            </a>
+          );
+        })}
       </div>
     </div>
   </section>
@@ -73,4 +95,34 @@ const [featured, ...rest] = guides;
       schedules change often, so every page shows the date it was last checked and links to the official source.
     </p>
   </section>
+
+  <script>
+    // Simple accessible slider: dots, auto-advance every 6 s, pauses on hover/focus,
+    // and stays still for people who prefer reduced motion.
+    const root = document.querySelector<HTMLElement>('.slider');
+    if (root) {
+      const slides = [...root.querySelectorAll<HTMLElement>('.slide')];
+      const dots = [...root.querySelectorAll<HTMLButtonElement>('.dot')];
+      let current = 0;
+      let timer: number | undefined;
+      const show = (n: number) => {
+        current = (n + slides.length) % slides.length;
+        slides.forEach((s, i) => {
+          const on = i === current;
+          s.classList.toggle('is-active', on);
+          if (on) s.removeAttribute('aria-hidden'); else s.setAttribute('aria-hidden', 'true');
+          s.querySelectorAll('a').forEach((a) => (on ? a.removeAttribute('tabindex') : a.setAttribute('tabindex', '-1')));
+        });
+        dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+      };
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const start = () => { if (!reduce) { stop(); timer = window.setInterval(() => show(current + 1), 6000); } };
+      const stop = () => { if (timer) window.clearInterval(timer); };
+      dots.forEach((d, i) => d.addEventListener('click', () => { show(i); start(); }));
+      root.addEventListener('mouseenter', stop);
+      root.addEventListener('mouseleave', start);
+      root.addEventListener('focusin', stop);
+      start();
+    }
+  </script>
 </Base>

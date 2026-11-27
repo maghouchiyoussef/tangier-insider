@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import Collage from '../components/Collage.astro';
+import { looks, fallbackLook } from '../data/looks';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides', ({ data }) => !data.draft);
@@ -12,16 +14,21 @@ const { Content } = await render(guide);
 const updated = guide.data.updated.toLocaleDateString('en-GB', {
   day: 'numeric', month: 'long', year: 'numeric',
 });
+const look = looks[guide.id] ?? fallbackLook;
 ---
-<Base
-  title={guide.data.title}
-  description={guide.data.description}
-  updated={guide.data.updated}
-  hero={guide.data.image ? { image: guide.data.image, title: guide.data.title, kicker: 'Tangier Insider guide' } : undefined}
->
+<Base title={guide.data.title} description={guide.data.description} updated={guide.data.updated} ogImage={look.photos[0]}>
+  <header class="guide-head" slot="wide" style={`--accent: ${look.color}`}>
+    <div class="guide-head-inner">
+      <div class="guide-head-text">
+        <p class="kicker">Tangier Insider guide</p>
+        <h1>{guide.data.title}</h1>
+        <p class="guide-head-meta">Last checked: {updated} · Written by a Tangier local</p>
+      </div>
+      <Collage photos={look.photos} eager />
+    </div>
+    <div class="zellige" aria-hidden="true"></div>
+  </header>
   <article>
-    {!guide.data.image && <h1>{guide.data.title}</h1>}
-    <p class="meta">Last checked: {updated} · Written by a Tangier local</p>
     <Content />
   </article>
 </Base>

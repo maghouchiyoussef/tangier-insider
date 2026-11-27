@@ -7,12 +7,12 @@ interface Props {
   title: string;
   description: string;
   updated?: Date;
-  // Optional full-width photo banner at the top of the page.
-  hero?: { image: string; title: string; subtitle?: string; kicker?: string; cta?: { href: string; label: string } };
+  // Photo used when the page is shared on social media (file name in public/images).
+  ogImage?: string;
 }
 
-const { title, description, updated, hero } = Astro.props;
-const ogImage = hero ? new URL(`/images/${hero.image}.webp`, Astro.site) : undefined;
+const { title, description, updated } = Astro.props;
+const ogImage = Astro.props.ogImage ? new URL(`/images/${Astro.props.ogImage}.webp`, Astro.site) : undefined;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = Astro.url.pathname === '/' ? title : `${title} | Tangier Insider`;
 const year = new Date().getFullYear();
@@ -49,7 +49,7 @@ const navItems = navOrder.filter((id) => published.includes(id));
     {updated && <meta property="article:modified_time" content={updated.toISOString()} />}
   </head>
   <body>
-    <header class={hero ? 'site-header on-hero' : 'site-header'}>
+    <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="/">
           <span class="brand-mark" aria-hidden="true">✦</span>
@@ -61,18 +61,6 @@ const navItems = navOrder.filter((id) => published.includes(id));
         </nav>
       </div>
     </header>
-
-    {hero && (
-      <section class="hero" style={`--hero: url('/images/${hero.image}.webp')`}>
-        <div class="hero-inner">
-          {hero.kicker && <p class="hero-kicker">{hero.kicker}</p>}
-          <h1>{hero.title}</h1>
-          {hero.subtitle && <p class="hero-sub">{hero.subtitle}</p>}
-          {hero.cta && <a class="btn" href={hero.cta.href}>{hero.cta.label}</a>}
-        </div>
-        <div class="hero-pattern" aria-hidden="true"></div>
-      </section>
-    )}
 
     <main>
       <slot name="wide" />

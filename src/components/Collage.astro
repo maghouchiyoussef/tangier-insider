@@ -1,0 +1,12 @@
+---
+// Three small portrait tiles, slightly staggered. Decorative: the page title carries the meaning.
+interface Props { photos: [string, string, string]; eager?: boolean }
+const { photos, eager = false } = Astro.props;
+---
+<div class="collage" aria-hidden="true">
+  {photos.map((p, i) => (
+    <div class={`tile tile-${i + 1}`}>
+      <img src={`/images/${p}.webp`} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" />
+    </div>
+  ))}
+</div>
