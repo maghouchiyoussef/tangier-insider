@@ -1,6 +1,6 @@
 ---
-title: "Things to do in Tangier: a local's list"
-description: "The best things to do in Tangier: the Kasbah, the medina, Café Hafa, the Caves of Hercules, Cap Spartel and more, with tips on timing and how to get there."
+title: "Things to do in Tangier: what to see, by a local"
+description: "What to do in Tangier, Morocco: the best things to see, from the Kasbah, the medina, Café Hafa, the Caves of Hercules, Cap Spartel and more, with tips on timing and how to get there."
 updated: 2026-11-22
 image: tangier-kasbah-walls-port-view
 draft: false

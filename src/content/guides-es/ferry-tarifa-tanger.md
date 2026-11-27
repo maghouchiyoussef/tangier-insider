@@ -1,6 +1,6 @@
 ---
-title: "Ferry Tarifa – Tánger: la guía completa (de un local)"
-description: "Guía del ferry Tarifa–Tánger: qué navieras lo operan, precios reales, duración, check-in, control de pasaportes a bordo, la diferencia horaria y Tánger Med frente al puerto de la ciudad."
+title: "Ferry Tarifa – Tánger (ida y vuelta): la guía completa de un local"
+description: "Guía del ferry Tarifa–Tánger, ida y vuelta: qué navieras lo operan, precios reales, duración, check-in, control de pasaportes, la diferencia horaria y la vuelta de Tánger a Tarifa."
 updated: 2026-11-27
 en: ferry-tarifa-tangier
 draft: false
@@ -100,6 +100,16 @@ Al salir del puerto, es normal que alguien se ofrezca a guiarte. Un educado "la,
 ## Dinero
 
 El dírham no se puede comprar fácilmente fuera de Marruecos. La buena noticia: nada más salir del puerto encontrarás **muchos cajeros y casas de cambio**. Saca o cambia lo que necesites allí. Muchas tiendas pequeñas y taxis solo aceptan efectivo.
+
+## La vuelta: de Tánger a Tarifa
+
+El ferry de vuelta sale del mismo **puerto de Tánger Ville**, justo debajo de la medina.
+
+- **Salidas desde Tánger:** un día laborable de diciembre, Baleària mostraba **5 al día** y AML **3 al día** (mira la tabla de arriba). Comprueba tu fecha exacta al reservar.
+- **Llega con tiempo:** al menos **60 minutos** antes con Baleària a pie (90 con vehículo), **2 horas** con AML.
+- **El control de pasaportes es en el puerto:** al salir de Marruecos, te revisan y sellan el pasaporte **en el edificio del puerto, antes de embarcar**, no en el barco. Cuenta con ese tiempo.
+- **Dírhams sobrantes:** puedes cambiarlos en las **casas de cambio cerca del puerto y en la medina**, y también **dentro del puerto**. Hazlo antes de irte: en España es difícil cambiar dírhams.
+- **Ojo con la hora:** la hora de salida de tu billete es **hora de Marruecos**.
 
 ## Excursión de un día desde Tarifa: un plan sencillo
 

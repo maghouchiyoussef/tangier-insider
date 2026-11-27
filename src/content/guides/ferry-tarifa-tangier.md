@@ -1,7 +1,7 @@
 ---
-title: "Tarifa to Tangier ferry: the complete guide (by a local)"
-description: "Tarifa–Tangier ferry guide: which companies run it, real ticket prices, crossing time, check-in, passport control on board, the time difference, and Tanger Med vs Tangier city port."
-updated: 2026-11-22
+title: "Tarifa to Tangier ferry (and back): the complete guide by a local"
+description: "Tarifa–Tangier ferry guide, both ways: which companies run it, real ticket prices, crossing time, check-in, passport control, the time difference, and the return trip from Tangier to Tarifa."
+updated: 2026-11-27
 image: tangier-bay-port-beach
 draft: false
 ---
@@ -100,6 +100,16 @@ Expect people offering to guide you as you leave the port. A polite "la, shukran
 ## Money
 
 The Moroccan dirham can't easily be bought outside Morocco. Good news: as soon as you walk out of the port you'll find **plenty of ATMs and exchange offices** (bureaux de change). Withdraw or change what you need there. Many small shops and taxis only take cash.
+
+## Going back: Tangier to Tarifa
+
+The return crossing leaves from the same **Tangier Ville** city port, right below the medina.
+
+- **Departures from Tangier:** on a December weekday, Baleària listed **5 a day** and AML **3 a day** (see the table above). Check your exact date when you book.
+- **Get to the port early:** at least **60 minutes** before with Baleària on foot (90 with a vehicle), **2 hours** with AML.
+- **Passport control is at the port:** when you leave Morocco, your passport is checked and stamped **in the port building, before you board**, not on the ship. Count this time in.
+- **Leftover dirhams:** you can change them back at the **exchange offices near the port and in the medina**, and also **inside the port**. Do it before you go: dirhams are hard to change in Spain.
+- **Mind the time difference:** the departure time on your ticket is **Moroccan time**.
 
 ## Day trip from Tarifa: a simple plan
 
