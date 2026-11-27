@@ -1,0 +1,36 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Collage from '../../components/Collage.astro';
+import { looks, fallbackLook } from '../../data/looks';
+import { ui } from '../../data/i18n';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guidesEs', ({ data }) => !data.draft);
+  return guides.map((guide) => ({ params: { slug: guide.id }, props: { guide } }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+const t = ui.es;
+const updated = guide.data.updated.toLocaleDateString(t.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' });
+const look = looks[guide.data.en] ?? fallbackLook;
+const enPublished = (await getCollection('guides', ({ data }) => !data.draft)).map((g) => g.id);
+const alternates = { es: `/es/${guide.id}/`, ...(enPublished.includes(guide.data.en) ? { en: `/${guide.data.en}/` } : {}) };
+---
+<Base title={guide.data.title} description={guide.data.description} updated={guide.data.updated} ogImage={look.photos[0]} lang="es" alternates={alternates}>
+  <header class="guide-head" slot="wide" style={`--accent: ${look.color}`}>
+    <div class="guide-head-inner">
+      <div class="guide-head-text">
+        <p class="kicker">{t.guideKicker}</p>
+        <h1>{guide.data.title}</h1>
+        <p class="guide-head-meta">{t.lastChecked}: {updated} · {t.byLocal}</p>
+      </div>
+      <Collage photos={look.photos} eager />
+    </div>
+    <div class="zellige" aria-hidden="true"></div>
+  </header>
+  <article>
+    <Content />
+  </article>
+</Base>

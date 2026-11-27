@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
 import Weather from '../components/Weather.astro';
+import { ui, navOrder, esSlug, type Lang } from '../data/i18n';
 
 interface Props {
   title: string;
@@ -9,38 +10,46 @@ interface Props {
   updated?: Date;
   // Photo used when the page is shared on social media (file name in public/images).
   ogImage?: string;
+  lang?: Lang;
+  // Paths of this same page in each language (for the language switcher and hreflang).
+  alternates?: Partial<Record<Lang, string>>;
 }
 
-const { title, description, updated } = Astro.props;
+const { title, description, updated, lang = 'en', alternates = {} } = Astro.props;
+const t = ui[lang];
 const ogImage = Astro.props.ogImage ? new URL(`/images/${Astro.props.ogImage}.webp`, Astro.site) : undefined;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const fullTitle = Astro.url.pathname === '/' ? title : `${title} | Tangier Insider`;
+const isHome = Astro.url.pathname === t.home;
+const fullTitle = isHome ? title : `${title} | Tangier Insider`;
 const year = new Date().getFullYear();
-// Only reviewed (non-draft) guides appear in the menu, so no link ever points to a missing page.
-const navOrder = ['tangier-in-one-day', 'ferry-tarifa-tangier', 'things-to-do-in-tangier', 'is-tangier-safe', 'tangier-train-al-boraq', 'darija-for-travelers'];
-const navLabels: Record<string, string> = {
-  'tangier-in-one-day': '1 day',
-  'ferry-tarifa-tangier': 'Ferry',
-  'things-to-do-in-tangier': 'Things to do',
-  'is-tangier-safe': 'Safety',
-  'tangier-train-al-boraq': 'Train',
-  'darija-for-travelers': 'Darija',
-};
-const published = (await getCollection('guides', ({ data }) => !data.draft)).map((g) => g.id);
-const navItems = navOrder.filter((id) => published.includes(id));
+
+// Only published guides appear in the menu, so no link ever points to a missing page.
+const enPublished = (await getCollection('guides', ({ data }) => !data.draft)).map((g) => g.id);
+const esPublished = (await getCollection('guidesEs', ({ data }) => !data.draft)).map((g) => g.id);
+const navItems = navOrder
+  .filter((id) => (lang === 'en' ? enPublished.includes(id) : esPublished.includes(esSlug[id])))
+  .map((id) => ({ href: lang === 'en' ? `/${id}/` : `/es/${esSlug[id]}/`, label: t.nav[id] }));
+
+const other: Lang = lang === 'en' ? 'es' : 'en';
+const otherHref = alternates[other] ?? ui[other].home;
+// Legal pages exist in English only for now.
+const legal = (p: string) => `/${p}/`;
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {Object.entries(alternates).map(([l, path]) => <link rel="alternate" hreflang={l} href={new URL(path!, Astro.site)} />)}
+    {alternates.en && <link rel="alternate" hreflang="x-default" href={new URL(alternates.en, Astro.site)} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Tangier Insider" />
+    <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'en_GB'} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -51,13 +60,16 @@ const navItems = navOrder.filter((id) => published.includes(id));
   <body>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="/">
+        <a class="brand" href={t.home}>
           <span class="brand-mark" aria-hidden="true">✦</span>
           <span class="brand-text">Tangier <em>Insider</em></span>
         </a>
-        <Weather />
-        <nav class="site-nav" aria-label="Main">
-          {navItems.map((id) => <a href={`/${id}/`} aria-current={Astro.url.pathname === `/${id}/` ? 'page' : undefined}>{navLabels[id]}</a>)}
+        <Weather lang={lang} />
+        <a class="lang-switch" href={otherHref} hreflang={other} lang={other}>
+          {other === 'es' ? 'Español' : 'English'}
+        </a>
+        <nav class="site-nav" aria-label={lang === 'es' ? 'Menú principal' : 'Main'}>
+          {navItems.map((item) => <a href={item.href} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>{item.label}</a>)}
         </nav>
       </div>
     </header>
@@ -72,13 +84,13 @@ const navItems = navOrder.filter((id) => published.includes(id));
     <footer class="site-footer">
       <div class="wrap">
         <nav aria-label="Footer">
-          <a href="/about/">About</a>
-          <a href="/contact/">Contact</a>
-          <a href="/privacy/">Privacy</a>
-          <a href="/terms/">Terms</a>
+          <a href={legal('about')}>{t.about}</a>
+          <a href={legal('contact')}>{t.contact}</a>
+          <a href={legal('privacy')}>{t.privacy}</a>
+          <a href={legal('terms')}>{t.terms}</a>
         </nav>
-        <p>© {year} Tangier Insider. Independent travel guide written by a Tangier local. Not affiliated with any ferry company or government office. Always confirm prices and schedules on official websites.</p>
-        <p class="credit">Weather data: <a href="https://www.met.no/en">MET Norway</a> (CC BY 4.0).</p>
+        <p>© {year} Tangier Insider. {t.footer}</p>
+        <p class="credit">{t.weatherCredit}: <a href="https://www.met.no/en">MET Norway</a> (CC BY 4.0).</p>
       </div>
     </footer>
   </body>

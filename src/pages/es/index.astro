@@ -1,0 +1,124 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Collage from '../../components/Collage.astro';
+import { looks, fallbackLook } from '../../data/looks';
+import { ui, esSlug } from '../../data/i18n';
+const t = ui.es;
+
+const order = [
+  'tangier-in-one-day', 'things-to-do-in-tangier', 'ferry-tarifa-tangier', 'tanger-med-vs-tangier-ville',
+  'tangier-train-al-boraq', 'is-tangier-safe', 'darija-for-travelers',
+];
+const tags = t.tags;
+const rank = (id: string) => (order.includes(id) ? order.indexOf(id) : order.length);
+const esGuides = await getCollection('guidesEs', ({ data }) => !data.draft);
+// Work with English ids so colours, photos and order are shared with the English site.
+const guides = esGuides
+  .map((g) => ({ id: g.data.en, href: `/es/${g.id}/`, data: g.data }))
+  .sort((a, b) => rank(a.id) - rank(b.id));
+
+// Slides on top of the home page.
+const slides = [
+  { id: 'intro', kicker: t.introKicker, title: t.introTitle, text: t.introText,
+    href: `/es/${esSlug['tangier-in-one-day']}/`, cta: t.planDay, color: '#122129',
+    photos: ['tangier-kasbah-walls-port-view', 'tangier-medina-rooftops', 'merkala-seafront-sunset'] as [string, string, string] },
+  ...['things-to-do-in-tangier', 'ferry-tarifa-tangier', 'darija-for-travelers']
+    .map((id) => guides.find((g) => g.id === id))
+    .filter((g) => g !== undefined)
+    .map((g) => ({
+      id: g!.id, kicker: tags[g!.id] ?? 'Guide', title: g!.data.title, text: g!.data.description,
+      href: g!.href, cta: t.readGuide, color: (looks[g!.id] ?? fallbackLook).color,
+      photos: (looks[g!.id] ?? fallbackLook).photos,
+    })),
+];
+---
+<Base
+  title="Tangier Insider: guía honesta de Tánger escrita por un local"
+  description="Consejos prácticos para visitar Tánger de alguien que vive aquí: el ferry desde Tarifa, qué ver, seguridad, precios y las palabras de darija que de verdad necesitas."
+  ogImage="tangier-kasbah-walls-port-view"
+  lang="es"
+  alternates={{ en: '/', es: '/es/' }}
+>
+  <section class="slider" slot="wide" aria-roledescription="carousel" aria-label="Guías destacadas">
+    <div class="slides">
+      {slides.map((s, i) => (
+        <div class={i === 0 ? 'slide is-active' : 'slide'} style={`--accent: ${s.color}`} aria-roledescription="slide" aria-label={`${i + 1} de ${slides.length}`} aria-hidden={i === 0 ? undefined : 'true'}>
+          <div class="slide-inner">
+            <div class="slide-text">
+              <p class="kicker">{s.kicker}</p>
+              {i === 0 ? <h1>{s.title}</h1> : <h2>{s.title}</h2>}
+              <p class="slide-sub">{s.text}</p>
+              <a class="btn" href={s.href} tabindex={i === 0 ? undefined : '-1'}>{s.cta}</a>
+            </div>
+            <Collage photos={s.photos} eager={i === 0} />
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="slider-dots">
+      {slides.map((s, i) => (
+        <button type="button" class={i === 0 ? 'dot is-active' : 'dot'} aria-label={`Ver diapositiva ${i + 1}: ${s.title}`}></button>
+      ))}
+    </div>
+    <div class="zellige" aria-hidden="true"></div>
+  </section>
+
+  <section class="band" slot="wide">
+    <div class="band-inner">
+      <h2 class="section-title">{t.dontMiss}</h2>
+      <div class="photo-cards">
+        {guides.map((g) => {
+          const look = looks[g.id] ?? fallbackLook;
+          return (
+            <a class="photo-card" href={g.href} style={`--accent: ${look.color}`}>
+              <div class="photo-card-img">
+                <img src={`/images/${look.photos[0]}.webp`} alt="" loading="lazy" decoding="async" />
+                {tags[g.id] && <span class="tag">{tags[g.id]}</span>}
+              </div>
+              <div class="photo-card-body">
+                <h3>{g.data.title}</h3>
+                <p>{g.data.description}</p>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <h2>{t.trustTitle}</h2>
+    <p>{t.trustText}</p>
+  </section>
+
+  <script>
+    // Simple accessible slider: dots, auto-advance every 6 s, pauses on hover/focus,
+    // and stays still for people who prefer reduced motion.
+    const root = document.querySelector<HTMLElement>('.slider');
+    if (root) {
+      const slides = [...root.querySelectorAll<HTMLElement>('.slide')];
+      const dots = [...root.querySelectorAll<HTMLButtonElement>('.dot')];
+      let current = 0;
+      let timer: number | undefined;
+      const show = (n: number) => {
+        current = (n + slides.length) % slides.length;
+        slides.forEach((s, i) => {
+          const on = i === current;
+          s.classList.toggle('is-active', on);
+          if (on) s.removeAttribute('aria-hidden'); else s.setAttribute('aria-hidden', 'true');
+          s.querySelectorAll('a').forEach((a) => (on ? a.removeAttribute('tabindex') : a.setAttribute('tabindex', '-1')));
+        });
+        dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+      };
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const start = () => { if (!reduce) { stop(); timer = window.setInterval(() => show(current + 1), 6000); } };
+      const stop = () => { if (timer) window.clearInterval(timer); };
+      dots.forEach((d, i) => d.addEventListener('click', () => { show(i); start(); }));
+      root.addEventListener('mouseenter', stop);
+      root.addEventListener('mouseleave', start);
+      root.addEventListener('focusin', stop);
+      start();
+    }
+  </script>
+</Base>

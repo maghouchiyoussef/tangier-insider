@@ -15,4 +15,16 @@ const guides = defineCollection({
   }),
 });
 
-export const collections = { guides };
+// Spanish translations. `en` is the id of the English guide it translates.
+const guidesEs = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides-es' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    updated: z.coerce.date(),
+    draft: z.boolean().default(true),
+    en: z.string(),
+  }),
+});
+
+export const collections = { guides, guidesEs };

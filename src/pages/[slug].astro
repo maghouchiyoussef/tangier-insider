@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Collage from '../components/Collage.astro';
 import { looks, fallbackLook } from '../data/looks';
+import { esSlug, ui } from '../data/i18n';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides', ({ data }) => !data.draft);
@@ -15,8 +16,11 @@ const updated = guide.data.updated.toLocaleDateString('en-GB', {
   day: 'numeric', month: 'long', year: 'numeric',
 });
 const look = looks[guide.id] ?? fallbackLook;
+const esPublished = (await getCollection('guidesEs', ({ data }) => !data.draft)).map((g) => g.id);
+const es = esSlug[guide.id];
+const alternates = { en: `/${guide.id}/`, ...(es && esPublished.includes(es) ? { es: `/es/${es}/` } : {}) };
 ---
-<Base title={guide.data.title} description={guide.data.description} updated={guide.data.updated} ogImage={look.photos[0]}>
+<Base title={guide.data.title} description={guide.data.description} updated={guide.data.updated} ogImage={look.photos[0]} lang="en" alternates={alternates}>
   <header class="guide-head" slot="wide" style={`--accent: ${look.color}`}>
     <div class="guide-head-inner">
       <div class="guide-head-text">
