@@ -1,14 +1,18 @@
 ---
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
+import Weather from '../components/Weather.astro';
 
 interface Props {
   title: string;
   description: string;
   updated?: Date;
+  // Optional full-width photo banner at the top of the page.
+  hero?: { image: string; title: string; subtitle?: string; kicker?: string; cta?: { href: string; label: string } };
 }
 
-const { title, description, updated } = Astro.props;
+const { title, description, updated, hero } = Astro.props;
+const ogImage = hero ? new URL(`/images/${hero.image}.webp`, Astro.site) : undefined;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = Astro.url.pathname === '/' ? title : `${title} | Tangier Insider`;
 const year = new Date().getFullYear();
@@ -40,20 +44,38 @@ const navItems = navOrder.filter((id) => published.includes(id));
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta name="twitter:card" content="summary" />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
     {updated && <meta property="article:modified_time" content={updated.toISOString()} />}
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrap">
-        <a class="brand" href="/">Tangier <span>Insider</span></a>
+    <header class={hero ? 'site-header on-hero' : 'site-header'}>
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span class="brand-text">Tangier <em>Insider</em></span>
+        </a>
+        <Weather />
         <nav class="site-nav" aria-label="Main">
-          {navItems.map((id) => <a href={`/${id}/`}>{navLabels[id]}</a>)}
+          {navItems.map((id) => <a href={`/${id}/`} aria-current={Astro.url.pathname === `/${id}/` ? 'page' : undefined}>{navLabels[id]}</a>)}
         </nav>
       </div>
     </header>
 
+    {hero && (
+      <section class="hero" style={`--hero: url('/images/${hero.image}.webp')`}>
+        <div class="hero-inner">
+          {hero.kicker && <p class="hero-kicker">{hero.kicker}</p>}
+          <h1>{hero.title}</h1>
+          {hero.subtitle && <p class="hero-sub">{hero.subtitle}</p>}
+          {hero.cta && <a class="btn" href={hero.cta.href}>{hero.cta.label}</a>}
+        </div>
+        <div class="hero-pattern" aria-hidden="true"></div>
+      </section>
+    )}
+
     <main>
+      <slot name="wide" />
       <div class="wrap">
         <slot />
       </div>
@@ -68,6 +90,7 @@ const navItems = navOrder.filter((id) => published.includes(id));
           <a href="/terms/">Terms</a>
         </nav>
         <p>© {year} Tangier Insider. Independent travel guide written by a Tangier local. Not affiliated with any ferry company or government office. Always confirm prices and schedules on official websites.</p>
+        <p class="credit">Weather data: <a href="https://www.met.no/en">MET Norway</a> (CC BY 4.0).</p>
       </div>
     </footer>
   </body>

@@ -2,44 +2,75 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 
-const icons: Record<string, string> = {
-  'ferry-tarifa-tangier': '🚢',
-  'things-to-do-in-tangier': '📍',
-  'is-tangier-safe': '🛡️',
-  'darija-for-travelers': '🗣️',
-  'tangier-train-al-boraq': '🚄',
-  'tangier-in-one-day': '📅',
-  'tanger-med-vs-tangier-ville': '⚓',
+// Order of the cards on the home page (unknown guides go at the end).
+const order = [
+  'tangier-in-one-day', 'things-to-do-in-tangier', 'ferry-tarifa-tangier', 'tanger-med-vs-tangier-ville',
+  'tangier-train-al-boraq', 'is-tangier-safe', 'darija-for-travelers',
+];
+const tags: Record<string, string> = {
+  'tangier-in-one-day': 'Itinerary',
+  'things-to-do-in-tangier': 'Sights',
+  'ferry-tarifa-tangier': 'Getting here',
+  'tanger-med-vs-tangier-ville': 'Getting here',
+  'tangier-train-al-boraq': 'Getting around',
+  'is-tangier-safe': 'Practical',
+  'darija-for-travelers': 'Language',
 };
-const guides = (await getCollection('guides', ({ data }) => !data.draft))
-  .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+const rank = (id: string) => (order.includes(id) ? order.indexOf(id) : order.length);
+const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort((a, b) => rank(a.id) - rank(b.id));
+const [featured, ...rest] = guides;
 ---
 <Base
   title="Tangier Insider: honest Tangier travel guide by a local"
   description="Practical Tangier travel advice from someone who lives here: the Tarifa ferry, what to see, safety, prices and the Darija words you actually need."
+  hero={{
+    image: 'tangier-kasbah-walls-port-view',
+    kicker: 'Tangier, Morocco',
+    title: 'Tangier, explained by someone who lives here',
+    subtitle: 'Honest, practical advice to cross the Strait, explore the medina and enjoy the city like a local.',
+    cta: { href: '/tangier-in-one-day/', label: 'Plan your day' },
+  }}
 >
-  <h1>Tangier, explained by someone who lives here</h1>
-  <p class="lead">
-    Practical, honest advice for visiting Tangier: how to cross from Spain, what is worth your time,
-    how to avoid the classic tourist traps, and a few words of Darija to make locals smile.
-  </p>
+  <section class="band" slot="wide">
+    <div class="band-inner">
+      <h2 class="section-title">Don't miss</h2>
 
-  {guides.length > 0 ? (
-    <div class="cards">
-      {guides.map((g) => (
-        <a class="card" href={`/${g.id}/`}>
-          <strong>{icons[g.id] ?? '📖'} {g.data.title}</strong>
-          <p>{g.data.description}</p>
+      {featured && (
+        <a class="feature" href={`/${featured.id}/`}>
+          {featured.data.image && (
+            <img src={`/images/${featured.data.image}.webp`} alt="" loading="eager" decoding="async" />
+          )}
+          <div class="feature-text">
+            {tags[featured.id] && <span class="tag">{tags[featured.id]}</span>}
+            <h3>{featured.data.title}</h3>
+            <p>{featured.data.description}</p>
+            <span class="more">Read the guide →</span>
+          </div>
         </a>
-      ))}
-    </div>
-  ) : (
-    <p class="note">The first guides are being checked on the ground and will be published very soon.</p>
-  )}
+      )}
 
-  <h2>Why trust this guide?</h2>
-  <p>
-    Tangier Insider is written by a Tangier local, not by a travel agency or a ferry company. Prices and
-    schedules change often, so every page shows the date it was last checked and links to the official source.
-  </p>
+      <div class="photo-cards">
+        {rest.map((g) => (
+          <a class="photo-card" href={`/${g.id}/`}>
+            <div class="photo-card-img">
+              {g.data.image && <img src={`/images/${g.data.image}.webp`} alt="" loading="lazy" decoding="async" />}
+              {tags[g.id] && <span class="tag">{tags[g.id]}</span>}
+            </div>
+            <div class="photo-card-body">
+              <h3>{g.data.title}</h3>
+              <p>{g.data.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <h2>Why trust this guide?</h2>
+    <p>
+      Tangier Insider is written by a Tangier local, not by a travel agency or a ferry company. Prices and
+      schedules change often, so every page shows the date it was last checked and links to the official source.
+    </p>
+  </section>
 </Base>

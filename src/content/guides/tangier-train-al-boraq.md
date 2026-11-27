@@ -2,6 +2,7 @@
 title: "Tangier by train: Al Boraq high-speed train to Rabat and Casablanca"
 description: "How to take Al Boraq, Morocco's high-speed train, from Tangier Ville station to Rabat and Casablanca: journey times, ticket prices, how to buy, and how to get to the station."
 updated: 2026-11-23
+image: tangier-ville-train-station
 draft: false
 ---
 

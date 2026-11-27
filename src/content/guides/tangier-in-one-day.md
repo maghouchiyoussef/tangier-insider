@@ -2,6 +2,7 @@
 title: "Tangier in one day: a local's itinerary"
 description: "How to spend one day in Tangier: a simple, walkable plan from the medina and the Kasbah to Café Hafa and the Merkala sunset, with tips from a local."
 updated: 2026-11-23
+image: merkala-seafront-sunset
 draft: false
 ---
 

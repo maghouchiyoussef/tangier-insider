@@ -2,6 +2,7 @@
 title: "Tanger Med vs Tangier Ville: which port should you choose?"
 description: "Tangier has two ferry ports from Spain: Tangier Ville in the city and Tanger Med 35–54 km away. Which one to choose, crossing times, prices and how to get into town."
 updated: 2026-11-23
+image: tanger-med-passenger-terminal
 draft: false
 ---
 

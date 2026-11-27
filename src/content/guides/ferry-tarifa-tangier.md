@@ -2,6 +2,7 @@
 title: "Tarifa to Tangier ferry: the complete guide (by a local)"
 description: "Tarifa–Tangier ferry guide: which companies run it, real ticket prices, crossing time, check-in, passport control on board, the time difference, and Tanger Med vs Tangier city port."
 updated: 2026-11-22
+image: tangier-bay-port-beach
 draft: false
 ---
 

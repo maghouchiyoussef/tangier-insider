@@ -1,0 +1,59 @@
+---
+// Current weather in Tangier, fetched once at build time from MET Norway
+// (free, allows commercial use with attribution, CC BY 4.0).
+// The site is rebuilt every few hours by .github/workflows/deploy.yml.
+// If the API is unreachable, the widget simply doesn't render.
+
+type Weather = { temp: number; symbol: string; time: Date };
+
+const ICONS: [string, string][] = [
+  ['thunder', '⛈️'], ['snow', '🌨️'], ['sleet', '🌨️'], ['rain', '🌧️'],
+  ['fog', '🌫️'], ['partlycloudy', '⛅'], ['fair', '🌤️'], ['cloudy', '☁️'], ['clearsky', '☀️'],
+];
+const LABELS: [string, string][] = [
+  ['thunder', 'Thunderstorms'], ['snow', 'Snow'], ['sleet', 'Sleet'], ['heavyrain', 'Heavy rain'],
+  ['lightrain', 'Light rain'], ['rain', 'Rain'], ['fog', 'Fog'], ['partlycloudy', 'Partly cloudy'],
+  ['fair', 'Mostly sunny'], ['cloudy', 'Cloudy'], ['clearsky', 'Sunny'],
+];
+
+function pick(list: [string, string][], symbol: string, fallback: string) {
+  const found = list.find(([key]) => symbol.includes(key));
+  return found ? found[1] : fallback;
+}
+
+let weather: Weather | null = null;
+try {
+  const res = await fetch(
+    'https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=35.77&lon=-5.81',
+    {
+      headers: { 'User-Agent': 'TangierInsider/1.0 https://tangierinsider.com contact@tangierinsider.com' },
+      signal: AbortSignal.timeout(8000),
+    },
+  );
+  if (res.ok) {
+    const data = await res.json();
+    const now = data.properties.timeseries[0];
+    weather = {
+      temp: Math.round(now.data.instant.details.air_temperature),
+      symbol: now.data.next_1_hours?.summary?.symbol_code ?? now.data.next_6_hours?.summary?.symbol_code ?? '',
+      time: new Date(now.time),
+    };
+  }
+} catch {
+  weather = null;
+}
+
+const hour = weather
+  ? weather.time.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Africa/Casablanca' })
+  : '';
+const isNight = weather?.symbol.includes('night');
+const icon = weather ? (isNight && weather.symbol.startsWith('clearsky') ? '🌙' : pick(ICONS, weather.symbol, '🌡️')) : '';
+const label = weather ? pick(LABELS, weather.symbol, '') : '';
+---
+{weather && (
+  <div class="weather" title={`Weather in Tangier at ${hour} (local time). Data: MET Norway`}>
+    <span class="weather-icon" aria-hidden="true">{icon}</span>
+    <span class="weather-temp">{weather.temp}°C</span>
+    <span class="weather-label">Tangier{label ? ` · ${label}` : ''}</span>
+  </div>
+)}

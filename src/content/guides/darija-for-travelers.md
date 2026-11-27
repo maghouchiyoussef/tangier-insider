@@ -2,6 +2,7 @@
 title: "Darija for travelers: Moroccan Arabic words you'll actually use"
 description: "Learn the basic Darija (Moroccan Arabic) you need in Tangier: greetings, please and thank you, prices in dirhams, taxis, cafés and how to say no politely."
 updated: 2026-11-22
+image: moroccan-mint-tea
 draft: false
 ---
 

@@ -10,6 +10,8 @@ const guides = defineCollection({
     description: z.string(),
     updated: z.coerce.date(),
     draft: z.boolean().default(true),
+    // Card and banner image (file name in public/images, without extension).
+    image: z.string().optional(),
   }),
 });
 

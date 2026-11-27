@@ -13,9 +13,14 @@ const updated = guide.data.updated.toLocaleDateString('en-GB', {
   day: 'numeric', month: 'long', year: 'numeric',
 });
 ---
-<Base title={guide.data.title} description={guide.data.description} updated={guide.data.updated}>
+<Base
+  title={guide.data.title}
+  description={guide.data.description}
+  updated={guide.data.updated}
+  hero={guide.data.image ? { image: guide.data.image, title: guide.data.title, kicker: 'Tangier Insider guide' } : undefined}
+>
   <article>
-    <h1>{guide.data.title}</h1>
+    {!guide.data.image && <h1>{guide.data.title}</h1>}
     <p class="meta">Last checked: {updated} · Written by a Tangier local</p>
     <Content />
   </article>
