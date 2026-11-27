@@ -52,6 +52,11 @@ The cheapest seats go first, so booking early usually helps, but prices are not 
 
 ## Getting to Tangier Ville station
 
+<figure>
+<img src="/images/tangier-ville-station-area.webp" width="1600" height="1064" alt="Modern towers and wide square near Tangier Ville train station" loading="lazy" decoding="async" />
+<figcaption>The area around Tangier Ville station. Photo: Tangier Insider</figcaption>
+</figure>
+
 Take a **petit taxi** (the small blue cars). Typical times and fares in normal traffic (local prices, November 2026):
 
 - From the **city port**: about **10 minutes**, around **10–15 dirhams**.

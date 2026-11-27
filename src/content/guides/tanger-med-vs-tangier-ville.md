@@ -13,6 +13,11 @@ It's the most common mistake visitors make: they book a cheap ferry "to Tangier"
 <figcaption>Tangier Ville, the city port. Photo: Pexels</figcaption>
 </figure>
 
+<figure>
+<img src="/images/bab-el-bahr-port-view.webp" width="862" height="573" alt="View of Tangier city port from the Kasbah walls near Bab el Bahr" loading="lazy" decoding="async" />
+<figcaption>Tangier city port seen from Bab el Bahr. Photo: Tangier Insider</figcaption>
+</figure>
+
 ## The short answer
 
 - **Visiting Tangier?** Take the ferry from **Tarifa** to **Tangier Ville**. You walk off the boat in the city.

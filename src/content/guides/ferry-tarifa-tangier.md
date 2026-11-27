@@ -90,6 +90,11 @@ Spain is usually **1 or 2 hours ahead** of Morocco, depending on the season (Spa
 - **On foot**: the city port sits right between the old medina and the new town. Both are **less than 15 minutes' walk** from the port exit, the medina slightly uphill.
 - **Petit taxi** (the small blue cars): handy with heavy luggage. A ride to the city centre or the medina costs **about 15 dirhams** (local price, November 2026). Ask the driver to use the meter, or agree on the price before you get in.
 
+<figure>
+<img src="/images/tangier-old-buildings-near-port.webp" width="1600" height="1064" alt="Old white buildings with balconies on a square near the port of Tangier" loading="lazy" decoding="async" />
+<figcaption>Old buildings a few steps from the city port. Photo: Tangier Insider</figcaption>
+</figure>
+
 Expect people offering to guide you as you leave the port. A polite "la, shukran" (no, thank you) and walking on with purpose is usually enough. See [Is Tangier safe?](/is-tangier-safe/) for more.
 
 ## Money

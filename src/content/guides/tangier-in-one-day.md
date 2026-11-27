@@ -30,6 +30,11 @@ From the Kasbah, it's an easy walk to the **Marshan** neighbourhood and **Café 
 
 Head down to the **Merkala seafront**, where locals stroll and watch the sun go down over the Strait. If you enjoy walking, go on foot; otherwise a petit taxi gets you there quickly.
 
+<figure>
+<img src="/images/tangier-corniche-beach.webp" width="1600" height="1067" alt="Tangier beach promenade with palm trees and new town buildings" loading="lazy" decoding="async" />
+<figcaption>The seafront promenade in the new town. Photo: Tangier Insider</figcaption>
+</figure>
+
 ## Evening: Petit Socco or the seafront
 
 End the day where you prefer:

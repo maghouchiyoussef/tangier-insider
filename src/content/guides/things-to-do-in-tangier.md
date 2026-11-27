@@ -20,6 +20,11 @@ The walled upper part of the medina, with views over the Strait to Spain on a cl
 
 **Kasbah Museum (Dar el Makhzen):** open **10:00–18:00**, usually **closed on Tuesdays**. Entry: **30 MAD** (adults), 15 MAD (ages 12–18), 5 MAD (under 12). The official page is not fully consistent about closing days, so check before you go: [Fondation Nationale des Musées](https://fnm.ma/museums/28).
 
+<figure>
+<img src="/images/tangier-medina-rooftops.webp" width="771" height="578" alt="White rooftops of Tangier old town with palm trees and the bay behind" loading="lazy" decoding="async" />
+<figcaption>The white rooftops of the old town. Photo: Tangier Insider</figcaption>
+</figure>
+
 ### The medina
 Narrow streets, small shops and everyday life. Get a little lost; it's part of the fun. Some alleys are dead ends, so keep an offline map handy (see [Is Tangier safe?](/is-tangier-safe/)).
 
@@ -94,6 +99,16 @@ Moroccan citizens get a cheaper "national" ticket (80 MAD for adults). Check the
 
 ### Cap Spartel
 The headland where the Mediterranean meets the Atlantic, with a lighthouse. Walking around the cape itself is free. The easiest way to get there without a car is the tourist bus above, or a taxi (agree on the price first).
+
+<figure>
+<img src="/images/cap-spartel-lighthouse.webp" width="1600" height="1067" alt="Cap Spartel lighthouse surrounded by palm trees and gardens" loading="lazy" decoding="async" />
+<figcaption>Cap Spartel lighthouse. Photo: Tangier Insider</figcaption>
+</figure>
+
+<figure>
+<img src="/images/cap-spartel-coast.webp" width="1600" height="900" alt="The green coastline and blue sea seen from Cap Spartel" loading="lazy" decoding="async" />
+<figcaption>The coast around Cap Spartel. Photo: Tangier Insider</figcaption>
+</figure>
 
 ### Caves of Hercules
 Sea caves with a famous opening shaped like Africa, near Cap Spartel. There is a small entrance fee; there's no official website with current hours or prices, so check on site.
